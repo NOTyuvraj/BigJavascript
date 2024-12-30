@@ -1,5 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Fascinate&display=swap');
+
 *{
     box-sizing: border-box;
     padding: 0%;
     margin: 0%;
+    font-family: "Electrolize", serif;
+}
+
+body{
+    background-color: antiquewhite;
+    height: 100vh;
+    width: 100vw;
+    padding:10px 70px;
+    
+}
+
+.main{
+    background-color: bisque;
+}
+
+.vertical-menu{
+    height: 100vh;
+    width: 200px;
+    display: block;
+}
+
+.vertical-menu a{
+    text-align: justify;
+    font-weight: 600;
+    background-color: rgb(231, 207, 177);
+    color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+}
+
+.vertical-menu a:hover{
+    background-color: rgb(241, 91, 91);
+}
+
+.vertical-menu .active{
+    background-color: rgb(241, 91, 91);
+    color: black;
 }

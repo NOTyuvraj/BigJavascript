@@ -1,21 +1,20 @@
 const myLib = [];
 
-function Book(name,author){
-    this.name = name;
-    this.author = author;
-    this.addBook = function(){
-        return `{book: ${this.name} , author: ${this.author}}`;
+class Books{
+    constructor(name , author , pages , read){
+        this.name = name,
+        this.author = author,
+        this.pages = pages,
+        this.read = read
     }
 }
 
-function addBookToLib(name , author){
-    const newBook = new Book(name,author);
-    myLib.push(newBook.addBook());
-}
+const b1 = new Books("the book" , "author" , 125 , 0);
+const b2 = new Books("a book" , "writer" , 25 , 1);
 
-addBookToLib("Raze" , "Author");
-addBookToLib("Raze1" , "Author 1");
+myLib.push(b1);
+myLib.push(b2);
 
 myLib.forEach(ele => {
-    console.log(ele);
+    console.log(ele)
 });
