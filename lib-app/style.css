@@ -32,7 +32,7 @@ body{
     background-color: rgb(238, 94, 94);
     font-size: 17px;
     font-weight: bold;
-    margin-bottom: 100px;   
+    margin-bottom: 50px;   
 }
 
 .new-book-btn:hover{
@@ -41,10 +41,18 @@ body{
 
 .main-cards{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
 .cards{
-    /* display: none; */
-    /* text-align: left; */
-}
+    border: 1px solid black;
+    height: 16rem;
+    width: 12rem;
+    text-align: left;
+    padding: 15px;  
+    border-radius: 12px;
+    margin: 20px;
+    background-color: rgb(238, 94, 94);
+    font-weight: 700;
+}  
