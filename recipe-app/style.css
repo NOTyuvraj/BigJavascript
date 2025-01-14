@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.cards{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.recipeCard{
+    width: 300px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow:0 4px 6px rgba(0,0,0,0.1) ;
+    overflow: hidden;
+}
+
+.recipeCard a{
+    background-color: #ff5637;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+    margin-top: 20px;
+    font-size: 22px;
+}
+
+.recipeCard a:hover{
+    background-color: rgb(255, 61, 26);
+    box-shadow:0 4px 6px rgba(0,0,0,0.1) ;
+}
+
+.break{
+    flex-basis: 100%;
+    height: 0;
+}
+
+.recipeCard img{
+    width: 500px;
+    height: auto;
+}
+
+.desc{
+    padding: 10px;
+}
