@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPS Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h1>Rock Paper Scissor</h1>
+
+    <div class="main-display">
+        <div class="user">
+            User Score
+            <div id="user-score">
+
+            </div>
+        </div>
+        <div class="user-display" id="user">
+            <h3>You</h3>
+            <div id="user-ans"></div>
+        </div>
+        <div class="cpu-display" id="cpu">
+            <h3>CPU</h3>
+            <div id="cpu-ans"></div>
+        </div>
+        <div class="cpu">
+            Cpu Score
+            <div id="cpu-score">
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="buttons">
+        <button onclick="check(1)" id="one" class="btn">Rock</button>
+        <button onclick="check(2)" id="two" class="btn">Paper</button>
+        <button onclick="check(3)" id="three" class="btn">Scissor</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
