@@ -1,0 +1,20 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-color: aliceblue;
+}
+
+#sketchArea{
+    display: flex;
+    margin: 100px auto;
+    background-color: white;
+    flex-wrap: wrap;
+    box-shadow: 10px 10px rgba(0, 170, 255, 0.035);
+}
+
+.cell{
+    border: 1px solid whitesmoke;
+}
