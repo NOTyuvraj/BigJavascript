@@ -7,7 +7,25 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="btns">
+      <button class="btn reset" onclick="resetCells()">Reset</button>
+      <button class="btn colorSelector"><input id="colorSelector" value="#000000" type="color" name="color" onclick="changeBg()"></button>
+    </div>
     <div class="container" id="sketchArea"></div>
-    <script src="script.js" ></script>
+    <div id="slider-container">
+      <input
+        type="range"
+        class="range-bar"
+        id="slider"
+        name="sqaurePerSide"
+        min="1"
+        value="16"
+        max="64"
+        step="1"
+        onchange="changeGrid(this.value)"
+      />
+      <p id="slider-value"></p>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>

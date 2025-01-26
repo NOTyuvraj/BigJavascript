@@ -1,27 +1,63 @@
 const GRIDSIDE = 600;
-let cells = 16;
+let cellsPerSide = 16;
 
 const sketchArea = document.querySelector("#sketchArea");
-sketchArea.style.width = `${GRIDSIDE}px`;
-sketchArea.style.height = `${GRIDSIDE}px`;
+const sliderContainer = document.querySelector("#slider-container");
+const slider = document.querySelector("#slider");
+const sliderValue = document.querySelector("#slider-value");
 
-function changerBackgroundColor(){
-    this.style.backgroundColor = "black";
+const colorSelector = document.querySelector("#colorSelector");
+let drawingColor = colorSelector.value;
+
+sliderValue.textContent = `${slider.value} x ${slider.value} (Grid)`;
+sketchArea.style.width = sketchArea.style.height = `${GRIDSIDE}px`;
+
+function changeBackgroundColor(){
+    this.style.backgroundColor = drawingColor;
 }
 
-function createGridCells(){
-    for(let i=0 ; i< (cells * cells) ; i++){
+function resetBg(){
+    this.style.backgroundColor = "white"
+}
+
+function createGridCells(cellsPerSide){
+    const numberOfSquare = (cellsPerSide * cellsPerSide);
+    const heightAndWidth = `${(GRIDSIDE / cellsPerSide)-2}px` 
+
+    for(let i=0 ; i< numberOfSquare; i++){
         const gridCell = document.createElement("div");
 
-        gridCell.style.width = `${(GRIDSIDE/cells)-2}px`;
-        gridCell.style.height = `${(GRIDSIDE/cells)-2}px`;
+        gridCell.style.width = gridCell.style.height = heightAndWidth;
         gridCell.classList.add("cell");
 
         sketchArea.appendChild(gridCell);
 
-        gridCell.addEventListener("mouseover" , changerBackgroundColor)
+        gridCell.addEventListener("mouseover" , changeBackgroundColor)
     }
 }
 
+function removeGridCells(){
+    while(sketchArea.firstChild){
+        sketchArea.removeChild(sketchArea.firstChild)
+    }
+}
 
-createGridCells();
+function resetCells(){
+    removeGridCells();
+    const val = document.querySelector("#slider").value;
+    createGridCells(val);
+}
+
+
+function changeGrid(ele){
+    removeGridCells();
+    sliderValue.textContent = `${ele} x ${ele} (Grid)`;
+    createGridCells(ele);
+}
+
+colorSelector.addEventListener("input" , (e) => {
+    drawingColor = e.target.value;
+})
+
+
+createGridCells(16);
