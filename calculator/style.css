@@ -10,3 +10,50 @@ body{
     font-family: "Roboto" , sans-serif;
     background-color: antiquewhite;
 }
+
+h1{ 
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.calc-outer{
+    border: 1px solid black;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    width: 400px;
+}
+
+.calc-display{
+    margin: 0 auto;
+    /* border-radius: 8px; */
+    display: flex;
+    justify-content: center;
+    flex-basis: 100%;
+}
+
+.calc-display input{
+    width:400px;
+    height: 5rem;
+}
+
+.btns{
+    width: 400px;
+}
+
+.btns-lines{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btns-lines button{
+    flex-basis: 33.33%;
+    padding: 2px;
+}
+
+.btns-lines .zero-btn{
+    flex-basis: calc(66.67% + 3px);
+}
