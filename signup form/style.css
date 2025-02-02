@@ -7,7 +7,7 @@
 
 body{
     font-family: "Roboto" , sans-serif;
-    background-color: rgba(255, 254, 252, 0.801);
+    background-color: rgba(238, 247, 250, 0.498);
     height: 100%;
     width: 100%;
     overflow: hidden;
@@ -43,9 +43,103 @@ body{
 
 .img-back>img{
     height: 735px;
-    opacity: 1.4;
+    filter: brightness(60%);    
 }
 
 .main-form{
-    
+    text-align: left;
+}
+
+.hero-text{
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding-top: 100px;
+    padding-left: 50px;
+}
+
+.hero-textCont{
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding-left: 50px;
+}
+
+.form-block{
+    margin-top: 30px;
+    background-color: white;
+    width: 1050px;
+    box-shadow: 0 6px 4px -4px gray , 0px -1px 1px rgba(128, 128, 128, 0.212);
+    padding-left: 50px;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-block p{
+    padding-top: 20px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    flex-basis: 100%;
+}
+
+input{
+    border: 1px solid rgba(128, 128, 128, 0.466);
+    height: 25px;
+    width: 200px;
+    border-radius: 4px;
+}
+
+input:focus{
+    outline: none;
+    border: 1px solid rgba(0, 0, 255, 0.554);
+    box-shadow: 0 0 2px rgba(0, 0, 255, 0.554);
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+label{
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: grey;
+}
+
+.form-inputLeft{
+    float: left;
+    padding-top: 20px;
+}
+
+.form-inputRight{
+    padding-top: 20px;
+    position: relative;
+    left: 70%;
+    float: right;
+}
+
+button{
+    margin-left: 50px;
+    background-color: #596D48;
+    color: white;
+    padding:14px 30px;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    border: none;
+    border-radius: 8px;
+}
+
+span{
+    position: relative;
+    top: 3%;
+    padding-left: 50px;
+}
+
+a{
+    text-decoration: none;
+    color: #596D48;
+    font-weight: 700;
 }

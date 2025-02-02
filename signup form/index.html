@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    
+
     <div class="img-back">
       <img src="images/halie-west-25xggax4bSA-unsplash.jpg" alt="back-img" />
       <div class="overlay-text">Buck</div>
@@ -16,37 +16,37 @@
     <div class="main-form">
 
       <p class="hero-text">
-        This is not real online service! You know you need something like this
-        in your life to help you realize you deepest dreams. Sign up now to get
+        This is not real online service! You know you need something <br> like this
+        in your life to help you realize you deepest dreams. <br> Sign up now to get
         started.
-      </p>
-      <p class="hero-text-cont">You know you want to.</p>
+      </p> <br>
+      <p class="hero-textCont">You know you want to.</p>
 
       <div class="form-block">
         <p>Let's do this!</p>
-        <form action="#">
-          <div class="form-input">
-            <label for="firstName">First Name</label><input type="text" required />
+        <form action="#" id="myform" class="main-form-block">
+          <div class="form-inputLeft">
+            <label for="firstName">First Name</label><br><input type="text" required />
           </div>
-          <div class="form-input">
-            <label for="lastName">Last Name</label><input type="text" required />
+          <div class="form-inputRight">
+            <label for="lastName">Last Name</label><br><input type="text" required />
+          </div> <br>
+          <div class="form-inputLeft">
+            <label for="email">Email</label><br><input type="email" required />
           </div>
-          <div class="form-input">
-            <label for="email">Email</label><input type="email" required />
+          <div class="form-inputRight">
+            <label for="phone">Phone Number</label><br><input type="number" required />
+          </div> <br>
+          <div class="form-inputLeft">
+            <label for="password">Password </label><br><input type="text" required />
           </div>
-          <div class="form-input">
-            <label for="phone">Phone Number</label><input type="number" required />
-          </div>
-          <div class="form-input">
-            <label for="password">Password </label><input type="text" required />
-          </div>
-          <div class="form-input">
-            <label for="con-password">Confirm Password</label><input type="text" required />
+          <div class="form-inputRight">
+            <label for="con-password">Confirm Password</label><br><input type="text" required />
           </div>
         </form>
       </div>
 
-      <button>Create Account</button>
+      <button form="myform">Create Account</button> <br>
 
       <span>Already have an account? <a href="#">Log in</a></span>
 
