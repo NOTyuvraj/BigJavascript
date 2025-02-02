@@ -1,17 +1,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 *{
-    margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
+    margin: 0px;
 }
 
-html ,body{
+body{
+    font-family: "Roboto" , sans-serif;
+    background-color: rgba(255, 254, 252, 0.801);
     height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+}
+
+.img-back{
+    position: relative;
+    width: auto;
+    height: 100%;
+    display: flex;
 }
 
 .img-back img{
-    object-fit: contain;
-    height:100%;
-    width: auto;
+    display: block;
+    
+}
+
+.overlay-text{
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-family: Norse;
+    font-size: 6rem;
+    font-weight: bold;
+    padding: 15px 0px;
+    width: 490px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.541);
+}
+
+.img-back>img{
+    height: 735px;
+    opacity: 1.4;
+}
+
+.main-form{
+    
 }
