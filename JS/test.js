@@ -19,16 +19,31 @@
 // console.log(books.info());
 
 
-function Hero(name,level){
-    this.name = name;
-    this.level = level;
+// function Hero(name,level){
+//     this.name = name;
+//     this.level = level;
+// }
+
+// const hero1 = new Hero("Sova" , 999);
+
+// Hero.prototype.greet =function (){
+//     return`${this.name} says Hello!`;
+// }
+
+// console.log(hero1.greet());
+// console.log(Hero.prototype);
+
+
+function book(title , author , pages , readYet){
+    this.title = title;
+    this.author = author;
+    this.pages = pages,
+    this.readYet = readYet;
+    this.info = function(){
+        return this.title +" "+ this.author +" "+this.pages + " " + this.readYet; 
+    }
 }
 
-const hero1 = new Hero("Sova" , 999);
+const book1 = new book("T1" , "A1" , 12 ,   "Yes");
 
-Hero.prototype.greet =function (){
-    return`${this.name} says Hello!`;
-}
-
-console.log(hero1.greet());
-console.log(Hero.prototype);
+console.log(book1.info());

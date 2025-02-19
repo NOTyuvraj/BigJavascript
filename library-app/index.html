@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Library</title>
+  </head>
+  <body>
+    <div class="main-head">
+      <h1>Library App</h1>
+      <button class="openDialog">Add Book</button>
+      <div class="centerPoint">
+        <dialog id="dialog" class="dialog">
+          <form action="">
+            <label id="top" for="bookName"
+              >Book Name : <br />
+              <input type="text" name="bookName" id="bookName" required />
+            </label>
+            <br />
+            <label for="authorName"
+              >Author Name : <br />
+              <input type="text" name="authorName" id="authorName" required />
+            </label>
+            <br />
+            <label for="pages"
+              >Pages : <br />
+              <input type="number" id="pages" required />
+            </label>
+            <br />
+            <label for="readYet" id="radioInput" id="readYet"
+              >Read Yet ? :
+              <input
+                type="radio"
+                name="readYet"
+                id="yes"
+                class="readYet"
+                required
+              />
+              Yes <input type="radio" name="readYet" class="readYet" /> No
+            </label>
+            <br />
+            <div class="btns">
+              <button class="submit">Add</button>
+              <button id="close" class="submit close">Close</button>
+            </div>
+          </form>
+        </dialog>
+      </div>
+    </div>
+
+    <div class="cards">
+
+    </div>
+  </body>
+</html>
