@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+    width: 100vw;
+    font-family: "Open Sans";
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+}
+
+.heading h1{
+    text-decoration: underline;
+}
+
+.main-list{
+    height: 650px;
+    width: 50%;
+    margin: 0 auto;
+    border: 1px solid red;
+}
+
+.todo-card{
+    width: 100%;
+    height: 582px;
+    display: grid;
+    grid-template-rows: repeat(12,1fr);
+    grid-column-start: 1;
+}
+
+.card{
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    border: 1px solid black;
+    max-height: 50px;
+}
+
+
+.checkList{
+    align-content: center;
+    text-align: center;
+}
+
+.todo-card-main{
+    align-content: center;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 10fr 1fr 1fr;
+    margin-bottom: 20px;
+}
+
+.create-task{
+    display: grid;
+    grid-template-columns: 80% 20%;
+    margin: 10px 0px;
+    border: 1px solid blue;
+
+}
+
+.create-task input{
+    font-size: 24px;
+    padding-left: 20px;
+}
+
+.add-task{
+    text-align: center;
+    border: 1px solid lime;
+    background-color: lime;
+}
+
+.add-btn{
+    border: none;
+    background-color: lime;
+}
+
+.close-btn , .edit-btn{
+    border: none;
+    background-color: white;
+}
+
+ul li{
+    /* border: 1px solid red; */
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url('../assets/unchecked.png');
+    background-size: cover;
+    background-position: center;
+    top: 10px;
+    left: 8px;
+}
+
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    background-image: url("../assets/check.png");
+}
+
+ul li span{
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    height: 40px;
+    width: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+ul li span:hover{
+    background-color: #edeef0;
+}
