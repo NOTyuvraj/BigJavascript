@@ -1,0 +1,88 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.navbar{
+    height: 100px;
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar a{
+    padding: 10px 50px;
+    margin: 0px 2px;
+    font-size: 24px;
+    text-decoration: none;
+    color: black;
+    background-color: azure;
+
+}
+
+.navbar a:hover{
+    background-color: rgb(215, 230, 230);
+}
+
+.menuDropDown{
+    display: none;
+}
+
+.menuDisplay{
+    background-color: blanchedalmond;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 200px;
+    width: 135px;
+    position: absolute;
+    top: 74px;
+    left: 522px;
+    z-index: 999;
+}
+
+.menuDropDown ul li{
+    list-style: none;
+    padding: 5px 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.menuDropDown ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.carousel{
+    height: 600px;
+    background-color: violet;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.carousel button{
+    width: 50px;
+    border: none;
+    background-color: violet;
+}
+
+.carouselImages{
+    /* z-index: 1; */
+height: 300px;
+    width: 500px;
+    display: none;
+}
+
+.shown{
+    display: block;
+}
