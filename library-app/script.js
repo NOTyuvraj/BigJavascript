@@ -54,3 +54,10 @@ newBook.addEventListener("click", function () {
   noPages.value = "";
   dialog.close();
 });
+
+bookName.addEventListener('input', function(ele){
+  bookName.setCustomValidity('');
+  if(!bookName.validity.valid){
+    
+  }
+})
