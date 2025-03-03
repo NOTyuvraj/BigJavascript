@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(#e66465, #9198e5);
+    height: 100vh;
+    width: 100vw;
+    color: white;
+    font-family: "Open Sans";
+}
+
+.formContainer{
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    flex-wrap: wrap;
+}
+
+.formContainer h1{
+    display: flex;
+    justify-content: center;
+    flex-basis: 100%;
+    text-decoration: underline;
+}
+
+.formContainer form{
+    /* border: 2px solid white; */
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.formContainer form label{
+    flex: 1;
+    flex-basis: 100%;
+    position: relative;
+    left: 25%;
+    transform: translate(-15%);
+}
+
+.formContainer form label input{
+    background-color: #cacce5;
+    border: none;
+    height: 30px;
+    width: 80%;
+    color: white;
+    outline: none;
+    padding: 0px 10px;
+}
+
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.formContainer form label input:focus{
+    background-color: #8f95d3;
+}
+
+.formContainer form button{
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 10px 15px;
+    border-radius: 6px;
+    color: white;
+    font-family: "Open Sans";
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.formContainer form button:hover{
+    background-color: #8389cf;
+    border: 1px solid wheat;
+}
