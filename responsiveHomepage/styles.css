@@ -1,0 +1,332 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap')
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+  width: 100vw;
+  font-family: "Open Sans";
+  overflow: hidden;
+}
+
+.navbar{
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid rgb(210, 210, 210);
+}
+
+.openNav{
+  display: none;
+}
+
+.logo{
+  margin-left: 3vw;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.navLinks{
+  margin-right: 3vw;
+}
+
+.navBtns{
+  margin: 0px 3vw;
+  font-weight: 700;
+  font-size: 1rem;
+  text-decoration: none;
+  color: black;
+}
+
+.navSignIn{
+  background-color: rgb(255, 52, 92);
+  color: white;
+  padding: 2vh 5vh;
+  border-radius: 8px;
+}
+
+.main{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 0px 3vw;
+  height: 90vh;
+}
+
+.leftMain{
+
+}
+
+.headMain{
+  font-size: 3.6rem;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-right: 4vw;
+}
+
+.headMainEm{
+  color: rgb(255, 52, 92) ;
+}
+
+.headDesc{
+  color: rgb(95, 94, 94);
+  margin-right: 10vw;
+  margin: 10px;
+}
+
+.headBtn{
+  border: none;
+  background-color: rgb(255, 52, 92);
+  position: relative;
+  top: -20%;
+  padding: 16px 30px;
+  color: white;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 1.4rem;
+  font-family: "Open Sans";
+}
+
+.rightMain img{
+  width: 100%;
+  height: 100%;
+   object-fit: contain; 
+}
+
+@media (max-width : 768px) {
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body{
+    height: 100vh;
+    width: 100%;
+    overflow: scroll;
+  }
+
+  .navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .open{
+    display: block;
+  }
+
+  .navBtns{
+    display: none;
+  }
+  
+  .logo{
+    margin: 0 auto;
+    font-size: 4vmax;
+  }
+
+  .navLinks{
+    display: none;
+  }
+
+  .svg1{
+    transform: rotate(90deg);
+    width: 60px;
+  }
+
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Open Sans";
+  color: black;
+  height: 100vh;
+  width: 100vw;
+}
+
+.main{
+  height: 100%;
+  width: 100%;
+}
+
+.nav{
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5vw;
+  border: 2px solid lightgrey;
+}
+
+.navLinks{
+  display: flex;  
+  gap: 4vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.navLinks h4{
+  font-size: 1vw;
+}
+
+.nav h2{
+  font-weight: 700;
+  font-size: 2vw;
+}
+
+.navLinks svg{
+  height: 1.2vw;
+  display: none;
+}
+
+.content{
+  height: calc(100% - 100px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentLeft{
+  width: 50%;
+  height: 100%;
+  padding: 5vw 5vw;
+}
+
+.contentLeft h1{
+  font-size: 4vw;
+  line-height: 4.4vw;
+}
+
+.contentLeft p{
+  font-size: 1.2vw;
+  font-weight: 600;
+  color: #666;
+  width: 80%;
+  margin-top: 3vw;
+  margin-bottom: 4vw;
+}
+
+.contentLeft button{
+  cursor: pointer;
+  padding: 1vw 1.5vw;
+  border: none;
+  border-radius: 8px;
+  background-color: #5937FF;
+  color: white;
+  font-size: 1.4vw;
+  font-weight: 700;
+}
+
+.content h1 span{
+  color: #5937FF;
+}
+
+.contentRight{
+  width: 50%;
+  height: 100%;
+}
+
+.contentRight img{
+  height: 100%;
+  object-fit: contain;
+}
+
+.navBtn{
+  padding: 0.7vw 1.2vw;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  background-color: #5937FF;
+  color: white;
+  font-size: 1.1vw;
+  font-weight: 700;
+}
+
+@media (max-width : 768px) {
+  
+
+
+  .nav{
+    /* background-color: lightseagreen; */
+    color: black;
+    padding: 0 5vw;
+    height: 60px;
+  }
+
+  .nav h2{
+    font-size: 6vw;
+  }
+
+  .nav h4{
+    font-size: 4vw;
+    display: none;
+  }
+
+  .nav button{
+    display: none;
+  }
+
+  .nav svg{
+    display: block;
+    height: 6vw;
+  }
+  
+  .content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 35%;
+    margin: 0 auto;
+  }
+
+  .contentLeft{
+    order: 2;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .contentLeft h1{
+    margin: 0 auto;
+    width: 90%;
+    line-height: 5vh;
+    font-size: 5vh;
+  }
+
+  .contentLeft p{
+    font-size: 2vh;
+    margin: 0 auto;
+    margin-top: 3vh;
+  }
+  
+  .contentLeft button{
+    margin: 0 auto;
+    margin-top: 3vh;
+    font-size: 3vh;
+    padding: 1vh 2vh;
+  }
+
+  .contentRight{
+    order: 1;
+    width: 100%;
+  }
+
+  .contentRight img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+
+}
