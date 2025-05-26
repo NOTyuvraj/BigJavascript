@@ -1,0 +1,27 @@
+.todo-item{
+  /* width: 100%; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 2px ;
+  margin: 6px 0px ;
+}
+
+p{
+  width: 300px;
+  font-size: large;
+  white-space: pre-wrap; 
+  word-wrap: break-word;
+}
+
+input[type="checkbox"]{
+  display: none;
+}
+
+.delete-btn{
+  width: 2em;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
